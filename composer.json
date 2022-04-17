@@ -1,0 +1,16 @@
+{
+    "name": "brookfeleke/phpmvd-framework",
+    "autoload": {
+        "psr-4": {
+            "Brookfeleke\\PhpmvdFramework\\": "src/",
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "BrookFeleke",
+            "email": "felekebrook05@gmail.com"
+        }
+    ],
+    "require": {}
+}
