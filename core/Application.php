@@ -1,6 +1,6 @@
 <?php
 
-namespace app\bello;
+namespace app\core;
 /** 
  * Class Application
  * 
@@ -8,9 +8,16 @@ namespace app\bello;
 
 class Application{
     
+    public Request $request;
     public Router $router;
-    public function ___construct(){
-        $this->router = new Router();
+    public function __construct(){
+        $this->request = new Request();
+        $this->router = new Router($this->request);
+    }
+
+    public function run() {
+        $this->router->resolve();
+        
     }
 
 
